@@ -1,27 +1,27 @@
 {
   "name": "img2svg",
   "private": true,
-
   "main": "server.js",
   "scripts": {
-    "postinstall": "browserify index.js -o bundle.js -t babelify",
+    "build": "browserify index.js -t babelify | uglifyjs -c -m > bundle.js && wc -c bundle.js",
     "start": "babel-node server.js"
   },
   "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
     "babel": "^5.8.29",
     "babelify": "^6.4.0",
     "browserify": "^12.0.1",
-    "express": "^4.13.3",
     "pixel": "^0.0.4",
     "pixel-to-svg": "^0.0.0",
     "react": "^0.14.1",
     "react-dom": "^0.14.1",
-    "varify": "^0.1.1"
+    "uglifyjs": "^2.4.10"
   },
   "babel": {
     "stage": 0
   },
-
   "keywords": [
     "pixelart"
   ],

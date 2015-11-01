@@ -12,6 +12,7 @@ git clone https://github.com/59naga/img2svg
 cd img2svg
 
 npm install
+npm run build
 PORT=59798 npm start
 # server running at http://localhost:59798/
 ```
