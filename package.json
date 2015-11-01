@@ -12,7 +12,7 @@
     "babelify": "^6.4.0",
     "browserify": "^12.0.1",
     "express": "^4.13.3",
-    "pixel": "^0.0.3",
+    "pixel": "^0.0.4",
     "pixel-to-svg": "^0.0.0",
     "react": "^0.14.1",
     "react-dom": "^0.14.1",
